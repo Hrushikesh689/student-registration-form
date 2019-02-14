@@ -1,0 +1,23 @@
+body {
+	background-image: url(img/saint.jpg);
+}
+header {
+	font-size: 20px;
+	font-family: sans-serif;
+}
+label{
+	margin:5px 0px;
+}
+input {
+	text-transform: capitalize;
+}
+input[type="date"]{
+	text-transform: uppercase;
+}
+footer {
+height: 80px;
+width: auto;
+padding: 20px;
+margin-top: 20px;
+color: white;	
+}

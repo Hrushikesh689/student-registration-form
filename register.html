@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href='include/custom.css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="include/bootstrap.min.css" />
+    
+    <script src="include/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="bg">
+         <header class="text-center text-light p-4 bg-dark mb-2 sticky-top">Student Registration Form</header>
+
+        <form action="" method="post" >
+        <div class="container">
+            <div class="card">
+                <div class="card-header text-center p-3 color-light bg-primary text-light">
+                    Personal Information
+                </div>
+                <div class="card-body">
+                            <label for="sn" class=" form-group">Full Name :</label>
+                            <input type="text" class=" form-control" placeholder="Enter Full Name">
+                            <label for="fn" class=" form-group">Father Name :</label>
+                            <input type="text" class=" form-control" placeholder="Enter Father name">
+                            <label for="mn" class=" form-group">Mother Name :</label>
+                            <input type="text" class=" form-control" placeholder="Enter Mother Name">
+                            <label for="mobile" class="form-group">Mobile :</label>
+                            <input type="tel" class="form-control" name="mobile" placeholder="Enter mobile number" >
+                            <label for="email" class="form-group">Email :</label>
+                            <input type="email" class="form-control" name="email" placeholder="Enter Email Address" >
+                        <div class="form-group">
+                            <label for="gender">Gender :</label>
+                            <select name="Gender" id="Gender" class="form-control">
+                                <option value="Select">Select One</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Religion">Religion :</label>
+                            <select name="Religion" id="Religion" class="form-control">
+                                <option value="Select">Select One</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budho">Bodho</option>
+                                <option value="Christan"></option>Christan</option>
+                            </select>
+                        </div>
+                        <label for="Birth">Birth Date :</label>
+                        <input type="date" class="form-control" name="Bith-date">
+                        <label for="picture" class="form-group">Picture :</label>
+                        <input type="file" name="pictuer" class="form-control" id="">
+                </div>
+
+            </div>
+        </div>
+            <div class="container mt-2">
+                    <div class="card">
+                        <div class="card-header text-center p-3 color-light bg-info text-light">Present Address</div>
+                        <div class="card-body">
+                            <label for="Home" class="form-group" >Home :</label>
+                            <input type="text" class="form-control" placeholder="Enter home name"  name="home">
+                            <label for="Village" class="form-group">Village :</label>
+                            <input type="text" class="form-control" placeholder="Enter village name" name="village">
+                            <label for="Post" class="form-group">Post Office :</label>
+                            <input type="text" class="form-control" placeholder="Enter Post Office Name" name="post">
+                            <label for="upzila" class="form-group">Up-Zilla :</label>
+                            <input type="text" class="form-control" placeholder="Enter Up-Zilla" name="upzilla">
+                            <label for="Zilla" class="form-group">Zilla :</label>
+                            <input type="text" class="form-control" placeholder="Enter Zilla" name="zilla">
+                            
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-2">
+                        <div class="card">
+                            <div class="card-header text-center p-3 color-light bg-danger text-light">Permanent Address</div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="radio" class=" mr-4">Same as Permanent Address</label>
+                                    <input type="checkbox" name="checkbox" onclick="auto(this.form)">
+                                </div>
+                                    <label for="Home" class="form-group">Home :</label>
+                                    <input type="text" class="form-control" placeholder="Enter home name" name="homea">
+                                    <label for="Village" class="form-group">Village :</label>
+                                    <input type="text" class="form-control" placeholder="Enter village name" name="villagea">
+                                    <label for="Post" class="form-group">Post Office :</label>
+                                    <input type="text" class="form-control" placeholder="Enter Post Office Name" name="posta">
+                                    <label for="upzila" class="form-group">Up-Zilla :</label>
+                                    <input type="text" class="form-control" placeholder="Enter Up-Zilla" name="upzillaa">
+                                    <label for="Zilla" class="form-group">Zilla :</label>
+                                    <input type="text" class="form-control" placeholder="Enter Zilla" name="zillaa">
+                                    
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <input type="submit" class="btn btn-outline-info mr-4 mt-3" >
+                        <input type="reset" class="btn btn-outline-danger mt-3 " value="Reset" >
+                    </div>
+        </form>
+        <footer class="text-center bg-dark">&copy; All Right Reserved</footer>
+    </div> 
+
+    <script>
+        function auto(f){
+            if (f.checkbox.checked == true) {
+                                f.homea.value = f.home.value;
+                                f.villagea.value = f.village.value;
+                                f.posta.value = f.post.value;
+                                f.upzillaa.value = f.upzilla.value;
+                                f.zillaa.value = f.zilla.value;
+                            }
+        }
+    </script>  
+</body>
+</html>
